@@ -43,7 +43,12 @@ def quick_sort(nums,low,high):
         # applying quick sort on the right half 
         quick_sort(nums,pivot_index+1,high)
 
-
-nums = [60,50,40,30,20,10]
-quick_sort(nums,0,5)
-print(nums)
+with open("Lecture-9/input.in","r") as file: 
+    content = file.readlines()
+    n = int(content[0])
+    nums = [] 
+    for i in range(1,n+1): 
+        nums.append(int(content[i]))
+    quick_sort(nums,0,n-1)
+    with open("Lecture-9/output.out","w") as file: 
+        file.writelines(",".join(list(map(str,nums))))
