@@ -21,6 +21,6 @@ with open(input_file,"r") as file:
         size,capacity = list(map(int,line.split()))
         sizes.append(size)
         buckets.append(capacity)
-
+#remaining solution in tomorrows class
 print(buckets)
 print(sizes)
