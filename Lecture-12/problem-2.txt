@@ -29,9 +29,11 @@ SAMPLE OUTPUT:
 9
 
 explanation: (solved in next class)
+(wrong)
 total = 1 + 2 + 4 
 1 + -> 4 
 2 - -> 2 
 4 + -> 6 
 8 - 
 16 + 
+(correct) we should start from x only 
